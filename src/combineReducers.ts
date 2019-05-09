@@ -22,7 +22,7 @@ function getErrorMessage(key: string, action: Action): string {
 }
 
 function getDefaultState<S, A extends Action>(
-  reducers: ReducersMapObject<S, A>
+  reducers: ReducersMapObject<S, A>,
 ): S {
   const keys = objectKeys(reducers);
   const defaultState: any = {};
@@ -63,7 +63,7 @@ export default function combineReducersImmutably<
 
   return function combination(
     state: RecordState<S> = defaultState,
-    action: A
+    action: A,
   ): RecordState<S> | never {
     return state.withMutations(s => {
       const keys = objectKeys(reducers);
