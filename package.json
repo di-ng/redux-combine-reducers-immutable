@@ -17,6 +17,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "npm run lint && tsdx test",
+    "prepublishOnly": "npm run build",
     "lint": "tslint -c ./tslint.json --project ./tsconfig.json"
   },
   "repository": {
