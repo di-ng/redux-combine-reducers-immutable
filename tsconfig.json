@@ -1,33 +1,30 @@
 {
+  "include": ["src", "types"],
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "declaration": false,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
-    "listFiles": true,
-    "module": "commonjs",
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./",
+    "strict": true,
     "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
     "noImplicitThis": true,
+    "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "target": "es5",
-    "types": [
-      "mocha"
-    ],
-    "downlevelIteration": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "demo",
-    "lib",
-    "test"
-  ]
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    },
+    "jsx": "react",
+    "esModuleInterop": true
+  }
 }
