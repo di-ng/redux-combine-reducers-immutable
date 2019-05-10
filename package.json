@@ -19,6 +19,7 @@
     "test": "npm run lint && tsdx test",
     "prettier": "pretty-quick --staged",
     "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit --listFiles false",
     "lint": "tslint -c ./tslint.json --project ./tsconfig.json"
   },
   "repository": {
