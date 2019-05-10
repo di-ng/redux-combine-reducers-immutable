@@ -2,7 +2,23 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/di-ng/redux-combine-reducers-immutable.svg)](https://greenkeeper.io/)
 
-A drop-in replacement for Redux's [combineReducers](https://redux.js.org/api-reference/combinereducers) helper function that returns [Immutable Records](https://facebook.github.io/immutable-js/docs/#/Record) instead of JS objects.
+A drop-in replacement for Redux's [combineReducers](https://redux.js.org/api/combinereducers) helper function that returns [Immutable Records](https://immutable-js.github.io/immutable-js/docs/#/Record) instead of JS objects.
+
+```ts
+import combineReducers from 'redux-combine-reducers-immutable';
+
+const rootReducer = combineReducers({
+  users: usersReducer,
+});
+
+// Now you can access your state with dot syntax, while still having Immutable data.
+// e.g. getState().users
+
+export rootReducer;
+
+// Note that the TypeScript types work well too!
+export type RootAppState = ReturnType<typeof rootReducer>;
+```
 
 ## Local Development
 
