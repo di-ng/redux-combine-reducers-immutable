@@ -55,7 +55,7 @@
     "immutable": "^4.0.0-rc.12",
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0",
-    "tsdx": "^0.5.8",
+    "tsdx": "^0.6.1",
     "tslib": "^1.9.3",
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
