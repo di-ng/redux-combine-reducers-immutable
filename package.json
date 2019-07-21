@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/di-ng/redux-combine-reducers-immutable#readme",
   "peerDependencies": {
-    "immutable": ">=3.0.0"
+    "immutable": ">=3.8.2"
   },
   "husky": {
     "hooks": {
@@ -50,15 +50,15 @@
     }
   },
   "devDependencies": {
-    "@types/jest": "^24.0.12",
+    "@types/jest": "^24.0.15",
     "husky": "^3.0.1",
     "immutable": "^4.0.0-rc.12",
-    "prettier": "^1.17.0",
-    "pretty-quick": "^1.10.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
     "tsdx": "^0.7.2",
-    "tslib": "^1.9.3",
-    "tslint": "^5.16.0",
+    "tslib": "^1.10.0",
+    "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.4.5"
+    "typescript": "^3.5.3"
   }
 }
